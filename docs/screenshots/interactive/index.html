@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The community room — six views</title>
+  <style>
+    :root { color-scheme: light; --paper: #f4f0e6; --ink: #273022; --muted: #636b5c; --green: #365f32; --line: #d4d4c4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, 'Times New Roman', serif; }
+    main { max-width: 1360px; margin: auto; padding: 64px 32px 32px; }
+    header { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: end; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+    .eyebrow, .number, .meta, footer, .tablet { font-family: 'Segoe UI', sans-serif; }
+    .eyebrow { margin: 0 0 16px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--green); font-weight: 650; }
+    h1 { margin: 0; max-width: 700px; font-size: clamp(40px, 5vw, 72px); line-height: .99; letter-spacing: -.05em; font-weight: 400; }
+    .intro { max-width: 400px; margin: 0 0 3px auto; color: var(--muted); font: 16px/1.65 'Segoe UI', sans-serif; }
+    .views { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 28px; padding: 40px 0; }
+    figure { margin: 0; min-width: 0; }
+    .image-link { display: grid; place-items: center; padding: 12px; min-height: 200px; background: #e5e7d9; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+    .image-link img { display: block; width: 100%; height: auto; }
+    .portrait .image-link { background: #e9e6da; height: 580px; }
+    .portrait .image-link img { width: auto; height: 100%; max-width: 100%; object-fit: contain; }
+    figcaption { display: flex; align-items: baseline; gap: 12px; margin-top: 14px; }
+    .number { color: var(--green); font-size: 11px; letter-spacing: .09em; }
+    h2 { margin: 0; font-weight: 400; font-size: clamp(21px, 2.2vw, 28px); letter-spacing: -.025em; }
+    .meta { margin: 5px 0 0 28px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+    .tablet { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 22px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    .tablet a { color: var(--green); }
+    footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 26px 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
+    @media (max-width: 760px) {
+      main { padding: 36px 18px 24px; }
+      header { grid-template-columns: 1fr; gap: 24px; padding-bottom: 28px; }
+      .intro { margin-left: 0; max-width: none; font-size: 14px; }
+      .views { grid-template-columns: 1fr; gap: 30px; padding: 28px 0; }
+      .portrait .image-link { height: min(660px, 140vw); }
+      .image-link { padding: 7px; min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="eyebrow">Final interface · 12 November 2026</p><h1>The community room.<br>Six ways in.</h1></div>
+      <p class="intro">The finished NVIDIA-inspired community room: photographs, short games and a public farewell wall ready for visitors. Select any capture to inspect the original image.</p>
+    </header>
+    <section class="views" aria-label="Six views of the interactive tribute">
+      <figure>
+        <a class="image-link" href="01-community-room.jpg"><img src="01-community-room.jpg" width="1280" height="800" alt="Desktop community room with photo workspace and public farewell wall"></a>
+        <figcaption><span class="number">01</span><h2>A place to gather</h2></figcaption><p class="meta">The final desktop view with its PCB background and warm reading panels.</p>
+      </figure>
+      <figure>
+        <a class="image-link" href="02-photo-puzzle.jpg"><img src="02-photo-puzzle.jpg" width="1280" height="800" alt="Nine-piece photograph puzzle in progress" loading="lazy"></a>
+        <figcaption><span class="number">02</span><h2>Put a memory together</h2></figcaption><p class="meta">Choose two pieces and swap their places.</p>
+      </figure>
+      <figure>
+        <a class="image-link" href="03-puzzle-complete.jpg"><img src="03-puzzle-complete.jpg" width="1280" height="800" alt="Completed photograph puzzle and its result" loading="lazy"></a>
+        <figcaption><span class="number">03</span><h2>Back together</h2></figcaption><p class="meta">The restored photograph and completion feedback.</p>
+      </figure>
+      <figure>
+        <a class="image-link" href="04-guess-the-year.jpg"><img src="04-guess-the-year.jpg" width="1280" height="800" alt="Photo year quiz with its answer choices" loading="lazy"></a>
+        <figcaption><span class="number">04</span><h2>What year was this?</h2></figcaption><p class="meta">Five moments from the photographic archive.</p>
+      </figure>
+      <figure class="portrait">
+        <a class="image-link" href="05-mobile-photos.jpg"><img src="05-mobile-photos.jpg" width="390" height="844" alt="Mobile photos view with the compact navigation and visitor count" loading="lazy"></a>
+        <figcaption><span class="number">05</span><h2>The album in your hand</h2></figcaption><p class="meta">A dedicated photos view on smaller screens.</p>
+      </figure>
+      <figure class="portrait">
+        <a class="image-link" href="06-mobile-wall.jpg"><img src="06-mobile-wall.jpg" width="390" height="844" alt="Mobile public farewell wall and message composer" loading="lazy"></a>
+        <figcaption><span class="number">06</span><h2>Leave a few words</h2></figcaption><p class="meta">The clean public farewell wall, ready for its first visitor message.</p>
+      </figure>
+    </section>
+    <aside class="tablet"><span>One more view · 768 px tablet</span><a href="tablet-768.jpg">Open the tablet capture ↗</a></aside>
+    <footer><span>Local browser captures. No Vercel deployment.</span><span>Made by <a href="https://www.linkedin.com/in/ayush-pathania-9a025b31b/" target="_blank" rel="noopener noreferrer">Ayush Pathania</a></span></footer>
+  </main>
+</body>
+</html>
